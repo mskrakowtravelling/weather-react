@@ -1,10 +1,12 @@
 import './App.css';
+import Weather from "./Weather"
+
+
 function App() {
   return (
     <div className="App">
-      <div className='container fluid'>
-        <h1>Hello!</h1>
-        <button className='btn btn-primary'>Search</button>
+      <div className='container-fluid'>
+        <Weather />
       </div>
 
     </div>

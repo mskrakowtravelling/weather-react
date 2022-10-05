@@ -1,0 +1,10 @@
+.App {
+    margin: 60px auto;
+    backdrop-filter: blur(1px) brightness(50%);
+    border-radius: 10px;
+    max-width: 85%;
+}
+
+.App h1 {
+    color: white;
+}
