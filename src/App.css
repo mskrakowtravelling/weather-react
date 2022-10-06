@@ -1,10 +1,8 @@
-.App {
-    margin: 60px auto;
-    backdrop-filter: blur(1px) brightness(50%);
-    border-radius: 10px;
-    max-width: 85%;
-}
+/* font-family: 'Edu SA Beginner', cursive; */
+/* font-family: 'Kalam',cursive; */
 
-.App h1 {
-    color: white;
+footer {
+    text-align: center;
+    background-color: beige;
+    margin: 0;
 }

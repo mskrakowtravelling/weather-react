@@ -1,6 +1,6 @@
 import React from "react";
 import './weather.css';
-import ReactAnimatedWeather from "react-animated-weather";
+import ReactAnimatedWeather from 'react-animated-weather';
 import Forecast from "./Forecast";
 
 const icons = [
@@ -31,30 +31,37 @@ export default function Weather() {
                 </div>
             </form>
 
-            <div className="row weather-data">
-                <div className="col-sm-6 ">
-                    <h1>Oaxaca, Mexico</h1>
-                    <ul>
-                        <li>
-                            Monday, 2 Oct 13:45
-                        </li>
-                        <li>Humidity: 60%</li>
-                        <li>Wind: 9.23 km/h</li>
-                    </ul>
+            <div className="row weatherData">
+                <div className="col-md-6 mainWeatherInfo">
+                    <div>
+                        <h1>Oaxaca, Mexico</h1>
+                        <ul>
+                            <li>
+                                <h2>Monday, 2 Oct 13:45</h2>
+                            </li>
+                            <li><h2>Humidity: 60%</h2></li>
+                            <li><h2>Wind: 9.23 km/h</h2></li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="col-sm-6">
+                <div className="col-md-6 mt-5">
                     <div className="row">
-                        <div className="col-sm-5 d-flex justify-content-end">
-                            <ReactAnimatedWeather
-                                icon={icons[2]}
-                                color="white"
-                                size={120}
-                                animate={false}
-                            />
+                        <div className="col-sm-6 weatherIcon">
+                            <div>
+                                <ReactAnimatedWeather
+                                    icon={icons[2]}
+                                    color="white"
+                                    size={120}
+                                    animate={true}
+                                />
+                            </div>
                         </div>
-                        <div className="col-sm-7 ">
-                            <h2>23°C</h2>
-                            <h3>Clear Sky</h3>
+                        <div className="col-sm-6 weatherInfo">
+                            <div>
+                                <h2 className="mainTemperature">23<sup>°C</sup></h2>
+                                <h3 className="mainTemperature">Clear Sky</h3>
+                            </div>
+
                         </div>
                     </div>
                 </div>

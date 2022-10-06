@@ -1,5 +1,6 @@
 import React from "react";
 import ReactAnimatedWeather from "react-animated-weather";
+import './forecast.css'
 
 const icons = [
     `CLEAR_DAY`,
@@ -25,17 +26,29 @@ export default function Forecast() {
                         icon={icons[2]}
                         color="white"
                         size={70}
-                        animate={false}
+                        animate={true}
                     /><span className="weekday">14° 12°</span>
                 </div>
 
                 <div className="col">
                     <span className="weekday">Mon</span>
+
                     <ReactAnimatedWeather
                         icon={icons[2]}
                         color="white"
                         size={70}
-                        animate={false}
+                        animate={true}
+
+                    />
+                    <span className="weekday">14° 12°</span>
+                </div>
+                <div className="col">
+                    <span className="weekday">Mon</span>
+                    <ReactAnimatedWeather
+                        icon={icons[2]}
+                        color="white"
+                        size={70}
+                        animate={true}
                     /><span className="weekday">14° 12°</span>
                 </div>
                 <div className="col">
@@ -44,7 +57,7 @@ export default function Forecast() {
                         icon={icons[2]}
                         color="white"
                         size={70}
-                        animate={false}
+                        animate={true}
                     /><span className="weekday">14° 12°</span>
                 </div>
                 <div className="col">
@@ -53,16 +66,7 @@ export default function Forecast() {
                         icon={icons[2]}
                         color="white"
                         size={70}
-                        animate={false}
-                    /><span className="weekday">14° 12°</span>
-                </div>
-                <div className="col">
-                    <span className="weekday">Mon</span>
-                    <ReactAnimatedWeather
-                        icon={icons[2]}
-                        color="white"
-                        size={70}
-                        animate={false}
+                        animate={true}
                     /><span className="weekday">14° 12°</span>
                 </div>
 

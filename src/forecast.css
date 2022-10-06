@@ -1,0 +1,17 @@
+.Forecast {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.Forecast .col {
+    text-align: center;
+    padding: 10px;
+}
+
+.Forecast .weekday {
+    display: block;
+    color: cornflowerblue;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 26px;
+    font-weight: 700;
+}
