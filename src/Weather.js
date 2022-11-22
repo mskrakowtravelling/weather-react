@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import './weather.css';
 import ReactAnimatedWeather from 'react-animated-weather';
 import Forecast from "./Forecast";
+import axios from "axios";
 
 const icons = [
     `CLEAR_DAY`,
@@ -17,16 +18,29 @@ const icons = [
 ];
 
 export default function Weather() {
+
+    function showWeather(response) {
+        alert(response.data.main.temp)
+    }
+
+    const appKey = "8a5a5cc90e2c01a958e2254f16f6442f";
+    let units = "metric";
+    let city = "Madrid"
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${appKey}`;
+    axios.get(url).then(showWeather);
+
+
+
+
     return (
         <div className="Weather">
-
-            <form >
+            <form onSubmit={handleSubmit}>
                 <div className="row">
                     <div className="col-10 d-flex justify-content-center">
                         <input type="search" placeholder="Enter a city" className="form-control" />
                     </div>
                     <div className="col-2 d-flex justify-content-center">
-                        <button type="submit">Search</button>
+                        <button type="submit" >Search</button>
                     </div>
                 </div>
             </form>
