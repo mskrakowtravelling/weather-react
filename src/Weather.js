@@ -34,7 +34,7 @@ export default function Weather() {
 
     return (
         <div className="Weather">
-            <form onSubmit={handleSubmit}>
+            <form>
                 <div className="row">
                     <div className="col-10 d-flex justify-content-center">
                         <input type="search" placeholder="Enter a city" className="form-control" />
@@ -64,7 +64,7 @@ export default function Weather() {
                             <div>
                                 <ReactAnimatedWeather
                                     icon={icons[2]}
-                                    color="white"
+                                    color="black"
                                     size={120}
                                     animate={true}
                                 />

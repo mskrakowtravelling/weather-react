@@ -24,7 +24,7 @@ export default function Forecast() {
                     <span className="weekday">Mon</span>
                     <ReactAnimatedWeather
                         icon={icons[2]}
-                        color="white"
+                        color="black"
                         size={70}
                         animate={true}
                     /><span className="weekday">14° 12°</span>
@@ -35,18 +35,18 @@ export default function Forecast() {
 
                     <ReactAnimatedWeather
                         icon={icons[2]}
-                        color="white"
+                        color="black"
                         size={70}
                         animate={true}
 
                     />
-                    <span className="weekday">14° 12°</span>
+                    <span className="weekday ">14° 12°</span>
                 </div>
                 <div className="col">
                     <span className="weekday">Mon</span>
                     <ReactAnimatedWeather
                         icon={icons[2]}
-                        color="white"
+                        color="black"
                         size={70}
                         animate={true}
                     /><span className="weekday">14° 12°</span>
@@ -55,7 +55,7 @@ export default function Forecast() {
                     <span className="weekday">Mon</span>
                     <ReactAnimatedWeather
                         icon={icons[2]}
-                        color="white"
+                        color="black"
                         size={70}
                         animate={true}
                     /><span className="weekday">14° 12°</span>
@@ -64,7 +64,7 @@ export default function Forecast() {
                     <span className="weekday">Mon</span>
                     <ReactAnimatedWeather
                         icon={icons[2]}
-                        color="white"
+                        color="black"
                         size={70}
                         animate={true}
                     /><span className="weekday">14° 12°</span>

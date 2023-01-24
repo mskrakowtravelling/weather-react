@@ -1,11 +1,16 @@
 /* General --------------------------------------------------------------------------- */
-.Weather {
+/* .Weather {
     padding: 70px 5px;
     text-shadow: 5px 7px 4px rgba(0, 0, 0, 0.8);
-    margin: 60px auto 10px;
+    
     backdrop-filter: blur(1px) brightness(35%);
     border-radius: 10px;
     max-width: 80%;
+} */
+
+.Weather {
+    padding: 70px 5px;
+    margin: 60px auto 10px;
 }
 
 /* Searchbox ------------------------------------------------------------------------- */
@@ -51,7 +56,7 @@
     list-style: none;
     font-family: 'Edu SA Beginner', cursive;
     font-weight: 500;
-    color: white;
+    color: #820000;
     margin: 0 auto;
 }
 
@@ -90,7 +95,7 @@
 }
 
 canvas {
-    filter: drop-shadow(5px 7px 4px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(5px 7px 4px rgb(130, 0, 0, 0.8))
 }
 
 @media(max-width: 435px) {
